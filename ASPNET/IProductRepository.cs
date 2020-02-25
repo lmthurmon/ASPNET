@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ASPNET.Models;
 using System.Data;
+using Testing.Models;
 
 namespace ASPNET
 {
@@ -14,8 +15,15 @@ namespace ASPNET
 
         public Product GetProduct(int id);
         public void UpdateProduct(Product product);
-        
+
+        public void InsertProduct(Product productToInsert);
 
         
+        public IEnumerable<Category> GetCategories();
+
+        
+        public Product AssignCategory();
+
+
     }
 }
